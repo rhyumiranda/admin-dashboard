@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 2fr 8fr;
+  height: calc(100vh + 100px);
 }
 
 /* ==========
@@ -20,7 +21,7 @@
 ========== */
 nav{
   grid-area: 1 / 1 / 4 / 2;
-  background-color: #17252A;
+  background-color: #0b2b04;
   display: grid;
   grid-template-rows: 1fr 4fr 6fr;
 }
@@ -45,6 +46,7 @@ nav .settings ul{
   color: white;
   display: grid;
   grid-gap: 1.5rem;
+  font-size: 1rem;
 }
 
 nav .navigation ul li,
@@ -59,7 +61,112 @@ nav .settings ul li{
 
 header{
   grid-area: 1 / 2 / 2 / 4;
-  background-color: red;
+  background-color: #59793f;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  
+}
+
+/* ----------+
+Search Container Section */
+
+.search-container,
+.control-container{
+  margin: 0 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: .9fr auto;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+}
+
+.search-container i,
+.search-container .user-image,
+.search-container .name{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.search-container .name{
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.search-container{
+  grid-row: 1 / 2;
+}
+
+#search{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#search i{
+  color: rgb(237, 237, 237);
+}
+
+#search-bar{
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(237, 237, 237);
+  padding: 8px;
+}
+
+/* ----------+
+Control Container Section */
+.control-container{
+  grid-row: 2 / 2;
+}
+
+#user-profile{
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.profile-picture{
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: gray;
+}
+
+.greeting-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  color: white;
+}
+
+.greeting{
+  font-weight: 400;
+  font-size: .75rem;
+}
+
+.profile-name{
+  font-weight: 600;
+}
+.user-image{
+  width: 24px;
+  height: 24px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.control-container button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: rgb(198, 220, 200);
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* ==========
@@ -68,7 +175,7 @@ header{
 
 main{
   grid-area: 2 / 2 / 3 / 3;
-  background-color: blue;
+  background-color: #ffffff;
 }
 
 /* ==========
@@ -77,5 +184,5 @@ main{
 
 aside{
   grid-area: 2 / 3 / 3 / 4;
-  background-color: yellow;
+  background-color: rgb(237, 237, 237);
 }
