@@ -14,21 +14,26 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="search">
-          <div class="search-bar"></div>
-          <div class="notifications"></div>
+        <div class="search-container">
+          <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search-bar" type="search">
+          </div>
+          <i class="fa-solid fa-bell"></i>
+          <div class="user-image"></div>
+          <div class="name">Morgan Oakley</div>
         </div>
-        <div class="control">
-          <div class="user-profile">
+        <div class="control-container">
+          <div id="user-profile">
             <div class="profile-picture"></div>
-            <div class="greeting">Hi, there</div>
-            <div class="profile-name">Morgan Oakley (@morgan)</div>
+            <div class="greeting-container">
+              <div class="greeting">Hi there,</div>
+              <div class="profile-name">Morgan Oakley (@morgan)</div>
+            </div>
           </div>
-          <div class="features">
-            <div class="feature-one">New</div>
-            <div class="feature-two">Upload</div>
-            <div class="feature-three">Share</div>
-          </div>
+          <div class="feature-one"><button>New</button></div>
+          <div class="feature-two"><button>Upload</button></div>
+          <div class="feature-three"><button>Share</button></div>
         </div>
       </header>
 
