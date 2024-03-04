@@ -3,6 +3,7 @@
 *{
   padding: 0;
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: .8px;
 }
 
 /* ==========
@@ -12,7 +13,7 @@
 .wrapper{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 2fr 8fr;
+  grid-template-rows: 1.5fr 8fr;
   height: calc(100vh + 100px);
 }
 
@@ -152,8 +153,8 @@ Control Container Section */
   font-weight: 600;
 }
 .user-image{
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-color: gray;
   border-radius: 20px;
   margin: auto;
@@ -162,11 +163,22 @@ Control Container Section */
 .control-container button{
   padding: 10px 20px;
   border-radius: 20px;
+  width: auto;
   outline: none;
   border: none;
-  font-size: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(12, 84, 11);
   background-color: rgb(198, 220, 200);
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.1);
+}
+
+.feature-one,
+.feature-two,
+.feature-three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ==========
@@ -175,7 +187,57 @@ Control Container Section */
 
 main{
   grid-area: 2 / 2 / 3 / 3;
-  background-color: #ffffff;
+  
+  background-color: #bfc9b1;
+}
+
+main h3{
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.card-container{
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.card{
+  width: 375px;
+  height: 155px;
+  background-color: rgb(255, 255, 255);
+  border-left: 10px solid rgb(18, 98, 18);
+  border-radius: 5px;
+  padding: 8px;
+  display: grid;
+}
+
+.mark{
+  margin-right: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.title{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  color: #0b2b04;
+}
+
+.content{
+  margin-left: 1rem;
+  margin-right: 2px;
+  font-size: 0.875rem;
+  color: #5d5e5b;
 }
 
 /* ==========
@@ -185,4 +247,121 @@ main{
 aside{
   grid-area: 2 / 3 / 3 / 4;
   background-color: rgb(237, 237, 237);
+}
+
+.announcement-container{
+  display: grid;
+  grid-template-rows: .5fr .5fr;
+}
+
+aside h3{
+  font-weight: 500;
+  margin: 1.10rem 1rem;
+}
+
+.first-panel{
+  grid-row: 1 / 2;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#announcement-card{
+  background-color: white;
+  border-radius: 5px;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+#side-maintenance{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#community-share-day{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+#updated-privacy-policy{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.title-announcement{
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+.line{
+  margin: 0 2rem;
+}
+
+.content-announcement{
+  font-size: 0.625rem;
+  
+}
+
+.second-panel{
+  grid-row: 2 / 3s;
+}
+
+#trending-card{
+  background-color: white;
+  width: 90%;
+  margin-left: 1rem;
+  height: 230px;
+  border-radius: 5px;
+}
+
+.trending-image{
+  width: 32px;
+  height: 32px;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.user-group {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-two,
+#user-three,
+#user-four{
+  margin-left: 1rem;
+  margin-top: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.9fr 10.1fr;
+  grid-template-rows: repeat(4, .1fr);
+  column-gap: 15px;
+}
+
+#user-one{
+  margin-left: 1rem;
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 10.1fr;
+  column-gap: 15px;
+  grid-template-rows: repeat(4, .1fr);
+}
+
+.username{
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+.trending-name{
+  color: gray;
+  font-size: 0.75rem;
 }
