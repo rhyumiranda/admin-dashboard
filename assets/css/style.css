@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ==========
+  Grid System
+========== */
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 8fr;
+}
+
+/* ==========
+  Navigation
+========== */
+nav{
+  grid-area: 1 / 1 / 4 / 2;
+  background-color: #17252A;
+  display: grid;
+  grid-template-rows: 1fr 4fr 6fr;
+}
+
+.logo{
+  color: white;
+  font-size: 24px;
+  margin: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.navigation,
+.settings{
+  margin: 1rem;
+}
+
+nav .navigation ul,
+nav .settings ul{
+  list-style: none;
+  color: white;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+nav .navigation ul li,
+nav .settings ul li{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+/* ==========
+  Header
+========== */
+
+header{
+  grid-area: 1 / 2 / 2 / 4;
+  background-color: red;
+}
+
+/* ==========
+  Main Content
+========== */
+
+main{
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: blue;
+}
+
+/* ==========
+  Aside
+========== */
+
+aside{
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: yellow;
+}
