@@ -247,7 +247,7 @@ main h3 {
 
 aside {
   grid-area: 2 / 3 / 3 / 4;
-  background-color: rgb(237, 237, 237);
+  background-color: #bfc9b1;
 }
 
 .announcement-container {
