@@ -33,7 +33,7 @@ nav {
   color: white;
   font-size: 24px;
   margin: 1rem;
-
+  padding: 8px;
   display: grid;
   grid-template-columns: 1fr 6fr;
 }
@@ -56,6 +56,17 @@ nav .navigation ul li,
 nav .settings ul li {
   display: grid;
   grid-template-columns: 1fr 6fr;
+  padding: 8px;
+  transition: all .3s ease;
+  cursor: pointer;
+  width: 70%;
+}
+
+nav .navigation ul li:hover,
+nav .settings ul li:hover {
+  color: rgb(127, 209, 128);
+  background-color: rgb(21, 79, 39);
+  border-left: 5px solid lightgreen;
 }
 
 /* ==========
@@ -153,12 +164,24 @@ Control Container Section */
 .profile-name {
   font-weight: 600;
 }
+
+.fa-bell{
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fa-bell:hover{
+  cursor: pointer;
+  color: rgb(255, 255, 178);
+}
+
 .user-image {
   width: 32px;
   height: 32px;
   background-color: gray;
   border-radius: 20px;
   margin: auto;
+  cursor: pointer;
 }
 
 .control-container button {
@@ -172,6 +195,8 @@ Control Container Section */
   color: rgb(12, 84, 11);
   background-color: rgb(198, 220, 200);
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .feature-one,
@@ -182,13 +207,19 @@ Control Container Section */
   align-items: center;
 }
 
+.feature-one button:hover,
+.feature-two button:hover,
+.feature-three button:hover {
+  background-color: white;
+}
+
 /* ==========
   Main Content
 ========== */
 
 main {
   grid-area: 2 / 2 / 3 / 3;
-
+  overflow: auto;
   background-color: #bfc9b1;
 }
 
@@ -199,6 +230,7 @@ main h3 {
 
 .card-container {
   margin: 0 1rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
@@ -217,6 +249,7 @@ main h3 {
   border-radius: 5px;
   padding: 8px;
   display: grid;
+  box-shadow: 8px 6px 8px 0 rgb(0, 0, 0, 0.1);
 }
 
 .mark {
@@ -225,6 +258,15 @@ main h3 {
   justify-content: end;
   align-items: center;
   gap: 20px;
+}
+
+.mark > *{ 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mark > *:hover {
+  color: rgb(96, 165, 96);
 }
 
 .title {
@@ -273,6 +315,7 @@ aside h3 {
   border-radius: 5px;
   width: 90%;
   margin-bottom: 1rem;
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.1);
 }
 
 #side-maintenance {
@@ -318,6 +361,7 @@ aside h3 {
   margin-left: 1rem;
   height: auto;
   border-radius: 5px;
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.1);
 }
 
 .trending-image {
