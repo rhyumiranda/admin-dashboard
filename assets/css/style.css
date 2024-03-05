@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   padding: 0;
-  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  letter-spacing: .8px;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  letter-spacing: 0.8px;
 }
 
 /* ==========
   Grid System
 ========== */
 
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1.5fr 8fr;
@@ -20,14 +22,14 @@
 /* ==========
   Navigation
 ========== */
-nav{
+nav {
   grid-area: 1 / 1 / 4 / 2;
   background-color: #0b2b04;
   display: grid;
   grid-template-rows: 1fr 4fr 6fr;
 }
 
-.logo{
+.logo {
   color: white;
   font-size: 24px;
   margin: 1rem;
@@ -37,12 +39,12 @@ nav{
 }
 
 .navigation,
-.settings{
+.settings {
   margin: 1rem;
 }
 
 nav .navigation ul,
-nav .settings ul{
+nav .settings ul {
   list-style: none;
   color: white;
   display: grid;
@@ -51,7 +53,7 @@ nav .settings ul{
 }
 
 nav .navigation ul li,
-nav .settings ul li{
+nav .settings ul li {
   display: grid;
   grid-template-columns: 1fr 6fr;
 }
@@ -60,56 +62,55 @@ nav .settings ul li{
   Header
 ========== */
 
-header{
+header {
   grid-area: 1 / 2 / 2 / 4;
   background-color: #59793f;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  
 }
 
 /* ----------+
 Search Container Section */
 
 .search-container,
-.control-container{
+.control-container {
   margin: 0 1rem;
   display: grid;
   align-items: center;
-  grid-template-columns: .9fr auto;
+  grid-template-columns: 0.9fr auto;
   grid-auto-columns: auto;
   grid-auto-flow: column;
 }
 
 .search-container i,
 .search-container .user-image,
-.search-container .name{
+.search-container .name {
   display: grid;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
-.search-container .name{
+.search-container .name {
   font-weight: 600;
   font-size: 0.8rem;
 }
 
-.search-container{
+.search-container {
   grid-row: 1 / 2;
 }
 
-#search{
+#search {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-#search i{
+#search i {
   color: rgb(237, 237, 237);
 }
 
-#search-bar{
+#search-bar {
   width: 50%;
   height: 30px;
   outline: none;
@@ -121,38 +122,38 @@ Search Container Section */
 
 /* ----------+
 Control Container Section */
-.control-container{
+.control-container {
   grid-row: 2 / 2;
 }
 
-#user-profile{
+#user-profile {
   display: grid;
   grid-template-columns: 1fr 10fr;
 }
 
-.profile-picture{
+.profile-picture {
   width: 48px;
   height: 48px;
   border-radius: 30px;
   background-color: gray;
 }
 
-.greeting-container{
+.greeting-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   color: white;
 }
 
-.greeting{
+.greeting {
   font-weight: 400;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
-.profile-name{
+.profile-name {
   font-weight: 600;
 }
-.user-image{
+.user-image {
   width: 32px;
   height: 32px;
   background-color: gray;
@@ -160,7 +161,7 @@ Control Container Section */
   margin: auto;
 }
 
-.control-container button{
+.control-container button {
   padding: 10px 20px;
   border-radius: 20px;
   width: auto;
@@ -175,7 +176,7 @@ Control Container Section */
 
 .feature-one,
 .feature-two,
-.feature-three{
+.feature-three {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,18 +186,18 @@ Control Container Section */
   Main Content
 ========== */
 
-main{
+main {
   grid-area: 2 / 2 / 3 / 3;
-  
+
   background-color: #bfc9b1;
 }
 
-main h3{
+main h3 {
   font-weight: 500;
   margin-left: 1rem;
 }
 
-.card-container{
+.card-container {
   margin: 0 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
@@ -208,7 +209,7 @@ main h3{
   align-items: center;
 }
 
-.card{
+.card {
   width: 375px;
   height: 155px;
   background-color: rgb(255, 255, 255);
@@ -218,7 +219,7 @@ main h3{
   display: grid;
 }
 
-.mark{
+.mark {
   margin-right: 1rem;
   display: flex;
   justify-content: end;
@@ -226,14 +227,14 @@ main h3{
   gap: 20px;
 }
 
-.title{
+.title {
   margin-top: 1rem;
   margin-left: 1rem;
   font-weight: 600;
   color: #0b2b04;
 }
 
-.content{
+.content {
   margin-left: 1rem;
   margin-right: 2px;
   font-size: 0.875rem;
@@ -244,22 +245,22 @@ main h3{
   Aside
 ========== */
 
-aside{
+aside {
   grid-area: 2 / 3 / 3 / 4;
   background-color: rgb(237, 237, 237);
 }
 
-.announcement-container{
+.announcement-container {
   display: grid;
-  grid-template-rows: .5fr .5fr;
+  grid-template-rows: 0.5fr 0.5fr;
 }
 
-aside h3{
+aside h3 {
   font-weight: 500;
-  margin: 1.10rem 1rem;
+  margin: 1.1rem 1rem;
 }
 
-.first-panel{
+.first-panel {
   grid-row: 1 / 2;
 
   display: grid;
@@ -267,60 +268,59 @@ aside h3{
   align-items: center;
 }
 
-#announcement-card{
+#announcement-card {
   background-color: white;
   border-radius: 5px;
   width: 90%;
   margin-bottom: 1rem;
 }
 
-#side-maintenance{
+#side-maintenance {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-#community-share-day{
+#community-share-day {
   margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
 }
-#updated-privacy-policy{
+#updated-privacy-policy {
   margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
 
-.title-announcement{
+.title-announcement {
   font-weight: 700;
   font-size: 0.75rem;
   margin-bottom: 4px;
 }
 
-.line{
+.line {
   margin: 0 2rem;
 }
 
-.content-announcement{
+.content-announcement {
   font-size: 0.625rem;
-  
 }
 
-.second-panel{
+.second-panel {
   grid-row: 2 / 3s;
 }
 
-#trending-card{
+#trending-card {
   background-color: white;
   width: 90%;
   margin-left: 1rem;
-  height: 230px;
+  height: auto;
   border-radius: 5px;
 }
 
-.trending-image{
+.trending-image {
   width: 32px;
   height: 32px;
   background-color: gray;
@@ -335,33 +335,37 @@ aside h3{
 
 #user-two,
 #user-three,
-#user-four{
+#user-four {
   margin-left: 1rem;
   margin-top: 10px;
   display: grid;
   align-items: center;
   grid-template-columns: 1.9fr 10.1fr;
-  grid-template-rows: repeat(4, .1fr);
+  grid-template-rows: repeat(4, 0.1fr);
   column-gap: 15px;
 }
 
-#user-one{
+#user-one {
   margin-left: 1rem;
   margin-top: 20px;
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 10.1fr;
   column-gap: 15px;
-  grid-template-rows: repeat(4, .1fr);
+  grid-template-rows: repeat(4, 0.1fr);
 }
 
-.username{
+#user-four{
+  margin-bottom: .875rem;
+}
+
+.username {
   font-weight: 500;
   font-size: 0.75rem;
   margin-bottom: 2px;
 }
 
-.trending-name{
+.trending-name {
   color: gray;
   font-size: 0.75rem;
 }
